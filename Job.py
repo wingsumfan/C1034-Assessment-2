@@ -37,7 +37,7 @@ class job:
         return self.__str__()
 
 import csv
-from job import job
+from Job import job
 class jobManager:
 
     def __init__(self, jobs=None):
