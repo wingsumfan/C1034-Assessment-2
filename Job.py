@@ -8,7 +8,7 @@ class job:
         self.hours = hours
 
     def get_name(self):
-        return self.name
+        return self._name
 
     def get_category(self):
         return self.category
@@ -37,7 +37,6 @@ class job:
         return self.__str__()
 
 import csv
-from Job import job
 class jobManager:
 
     def __init__(self, jobs=None):
