@@ -34,8 +34,8 @@ try:
     total_today = sum(j.get_hours() for j in manager.search_by_name_and_date("Wing", "20/11/2025"))
     if total_today + job_exceed_daily.get_hours() > 8:
         raise ValueError("Cannot allocate more than 8 hours a day")
-    except ValueError as e:
-        print("Expected error", e)
+except ValueError as e:
+    print("Expected error", e)
 
 #Adding job5 should be allowed (only 6 hrs)
 print(manager.add_job(job5))
