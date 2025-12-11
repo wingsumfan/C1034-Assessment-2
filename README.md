@@ -30,3 +30,5 @@ The tests done are as follows:
 -Testing the exceptional cases\
   -A job with negative hours\
   -A job with a negative rate\
+
+Each seperate test is annotated in "testing.py" for review purposes
