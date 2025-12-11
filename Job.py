@@ -87,12 +87,12 @@ class jobManager:
         return [job for job in self._jobs if job.get_rate() == rate]
 
     def search_by_name_and_date(self, name, date):
-        return [job for job in self._jobs if job.get_worker_name() == name and job.get_date() == date]
+        return [job for job in self._jobs if job.get_name() == name and job.get_date() == date]
 
     def get_total_cost_per_name(self):
         result = {}
         for job in self._jobs:
-            name = job.get_worker_name()
+            name = job.get_name()
             cost = job.get_rate() * job.get_hours()
             if name not in result:
                 result[name] = 0
@@ -102,7 +102,7 @@ class jobManager:
     def get_category_count_per_name(self):
         result = {}
         for job in self._jobs:
-            name = job.get_worker_name()
+            name = job.get_name()
             category = job.get_category()
 
             if name not in result:
