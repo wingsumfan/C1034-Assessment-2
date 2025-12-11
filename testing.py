@@ -47,7 +47,7 @@ for job in manager.get_jobs():
 #test searching
 print(manager.search_by_category("Teaching"))
 print(manager.search_by_rate(22.0))
-print(manager.search.by_name_and_date("Wing", "20/11/2025"))
+print(manager.search_by_name_and_date("Wing", "20/11/2025"))
 
 #test editing jobs
 job1_edited = create_job("Tiffany", "Teaching", 27.0, "05/04/2025", 2)
