@@ -77,9 +77,9 @@ print("Loaded jobs from file:", manager2.get_jobs())
 #test the exceptional cases
 #negative rate
 try:
-        bad_job = create_job("Mia", "Teaching", -5.0, "04/02/2025", 2)
-    except ValueError as e:
-        print("expected error:", e)
+    bad_job = create_job("Mia", "Teaching", -5.0, "04/02/2025", 2)
+except ValueError as e:
+    print("expected error:", e)
 
 #negative hours
 try:
