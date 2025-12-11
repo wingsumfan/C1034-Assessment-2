@@ -1,9 +1,9 @@
 # C1034-Assessment-2
 
-#Project Description
+# Project Description
 This project aims to show my knowledge of the module by implementing the knowledge into a working example creating and modifying classes/objects
 
-#Usage
+# Usage
 Can be ran in an IDE or on Gitbash
 -Requires python or python3
 -Tested on Windows 11
@@ -11,7 +11,7 @@ Can be ran in an IDE or on Gitbash
 To use in GitBash, type in "python testing.py"
 To use in an IDE, run "testing.py"
 
-#Documentation/Overview
+# Documentation/Overview
 
 Two classes "job" and "jobManager" have been created in the file "job.py", the class "job" holds the information required for a worker (name, category, rate, date, hours); the class "jobManager" provides all the methods for job manipulation (adding jobs, editing jobs, etc)
 
