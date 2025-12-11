@@ -119,7 +119,7 @@ class jobManager:
             reader = csv.reader(file)
             for row in reader:
                 name, category, rate, date, hours = row
-                job = job(name, category, float(rate), date, int(hours))
+                job_obj = job_obj(name, category, float(rate), date, int(hours))
 
     def save_to_file(self, file_name):
         with open(file_name, "w", newline='') as file:
