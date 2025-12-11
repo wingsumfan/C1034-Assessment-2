@@ -41,8 +41,8 @@ except ValueError as e:
 print(manager.add_job(job5))
 
 #test displaying all jobs
-for job in manager.get_jobs():
-    print(job)
+for j in manager.get_jobs():
+    print(j)
 
 #test searching
 print(manager.search_by_category("Teaching"))
@@ -63,7 +63,7 @@ total_costs = manager.get_total_cost_per_name()
 print(total_costs)
 
 #test the category count per a worker
-category_counts = manager.get_count_per_name()
+category_counts = manager.get_category_count_per_name()
 print(category_counts)
 
 #test saving and loading into CSV file
