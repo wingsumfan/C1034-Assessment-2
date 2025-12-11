@@ -8,7 +8,7 @@ class job:
         self.hours = hours
 
     def get_name(self):
-        return self._name
+        return self.name
 
     def get_category(self):
         return self.category
